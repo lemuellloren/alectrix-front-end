@@ -5023,6 +5023,17 @@
 		"oAP": "\/assets\/fonts\/MyriadPro-SemiboldCond.otf",
 		"oF": 0
 		},
+	"\/assets\/images\/alectrix-logo.png": {
+		"ft": 32768,
+		"iS": 10028,
+		"oA": 0,
+		"oAP": "\/assets\/images\/alectrix-logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/js\/_base.js": {
 		"ft": 64,
 		"ma": 1,
@@ -5255,6 +5266,13 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/index.html",
+		"oF": 0
+		},
+	"\/README.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/README.html",
 		"oF": 0
 		},
 	"\/README.md": {
