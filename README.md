@@ -1,6 +1,6 @@
 # uikit boilerplate
 
-This a Leet front-end boilerplate using uikit, less, and codekit.
+Alectrix Electric Services front-end.
 
 ## Built With
 
