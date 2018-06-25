@@ -138,7 +138,37 @@ h1 {
 		}
 	}
 }
+
 // #endregion
 /* ==========================================================================
    GLOBAL PAGE SECTIONS ( Site Menu, Site Footer, etc )
    ========================================================================== */
+
+//Main Navigaton
+.navigation {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	width: auto;
+	height: auto;
+	padding: 30px 15px;
+	border-bottom: 5px solid @tomato;
+	.nav-container {
+		&__logo {
+			width: 166px;
+			height: 45px;
+		}
+		&__menu-link {
+			.soft-transition();
+			color: @black;
+			&:hover {
+				color: @tomato;
+			}
+		}
+		&__hamburger-menu {
+			text-align: right;
+		}
+	}
+}
