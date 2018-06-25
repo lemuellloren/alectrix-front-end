@@ -1,33 +1,58 @@
 /* ==========================================================================
     FONTS IMPORT HERE
    ========================================================================== */
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500,700');
 
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500,700');
 /* ==========================================================================
     BASE FRAMEWORK
    ========================================================================== */
+
 @import '../bower_components/uikit/less/uikit.less';
-
-
 /* ==========================================================================
    GLOBAL VARIABLES
    ========================================================================== */
-@main-font: 'Ubuntu', sans-serif;
+
+//Styles
+@main-font: 'Ubuntu',
+sans-serif;
 @main-size: 18px;
 @font-header: 36px;
 @tomato: #EC3225;
 @black: #000000;
-@white: FFFFFF;
+@white: #FFFFFF;
 @wheat: #F7F7F7;
 @gray: #979797;
-@bg-gradient: linear-gradient(to bottom, #ec3225, #71160f);
-
+@bg-gradient: linear-gradient(to bottom,
+#ec3225,
+#71160f);
+//Viewport
+@width-320: ~"only screen and (min-width: 320px)";
+@width-360: ~"only screen and (min-width: 360px)";
+@width-375: ~"only screen and (min-width: 375px)";
+@width-480: ~"only screen and (min-width: 480px)";
+@width-640: ~"only screen and (min-width: 640px)";
+@width-690: ~"only screen and (min-width: 690px)";
+@width-768: ~"only screen and (min-width: 768px)";
+@width-768m: ~"screen and (max-width: 768px)";
+@width-960: ~"only screen and (min-width: 960px)";
+@width-980: ~"only screen and (min-width: 980px)";
+@width-1024: ~"only screen and (min-width: 1024px)";
+@width-1200: ~"only screen and (min-width: 1200px)";
+@width-1366: ~"only screen and (min-width: 1366px)";
+@width-1920: ~"only screen and (min-width: 1920px)";
+@width-2560: ~"only screen and (min-width: 2560px)";
+// MAX WIDTH AREA
+@width-320max: ~"only screen and (max-width: 320px)";
+@width-960max: ~"only screen and (max-width: 690px)";
+@width-767max: ~"only screen and (max-width: 767px)";
 /* ==========================================================================
    FRAMEWORK OVERRIDES
    ========================================================================== */
-body{
+
+body {
 	font-family: @main-font;
 }
+
 h1 {
 	font-size: @font-header;
 }
@@ -35,8 +60,82 @@ h1 {
 /* ==========================================================================
    SITE-WIDE STYLES & MIXINS
    ========================================================================== */
+
+//Soft Transition
 .soft-transition() {
 	transition: all 0.4s ease;
+}
+
+//Buttons Mixins
+.btn {
+	position: relative;
+	z-index: 1;
+	padding: 10px 20px;
+	color: @white;
+	font-size: @main-size - 4px;
+	font-family: @main-font;
+	text-transform: uppercase;
+	font-weight: bold;
+	cursor: pointer;
+	.soft-transition();
+	&::before {
+		.soft-transition();
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 50%;
+		right: 50%;
+		bottom: 0;
+		opacity: 0;
+		z-index: -2;
+	}
+	&:hover {
+		&::before {
+			.soft-transition();
+			left: 0;
+			right: 0;
+			opacity: 1;
+			background-color: @black;
+		}
+	}
+	&:focus {
+		&::before {
+			.soft-transition();
+			left: 0;
+			right: 0;
+			opacity: 1;
+		}
+	}
+	&--tomato {
+		background-color: @tomato;
+		border: 1px solid @tomato;
+		&:hover {
+			border: 1px solid @black;
+		}
+		&::before {
+			background-color: @black;
+		}
+		&:hover {
+			&::before {
+				background-color: @black;
+			}
+		}
+	}
+	&--transparent {
+		background-color: transparent;
+		border: 1px solid @white;
+		&:hover {
+			border: 1px solid @tomato;
+		}
+		&::before {
+			background-color: @tomato;
+		}
+		&:hover {
+			&::before {
+				background-color: @tomato;
+			}
+		}
+	}
 }
 
 /* ==========================================================================
