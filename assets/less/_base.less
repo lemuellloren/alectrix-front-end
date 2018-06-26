@@ -223,21 +223,17 @@ h1 {
 		}
 		&__links {
 			display: inline-block;
-			padding: 0 10px;
 			text-transform: uppercase;
 		}
 		&__names {
 			.soft-transition();
+			padding: 0 10px;
 			font-size: @main-size - 4px;
 			font-weight: bold;
 			color: @black;
 			text-decoration: none;
 			&:hover {
 				color: @tomato;
-				&::after {
-					content: '';
-					border-bottom: 1px solid red;
-				}
 			}
 		}
 	}
