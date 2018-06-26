@@ -34,17 +34,17 @@
 
     <!-- MAIN NAVIGATON -->
     <nav class="navigation">
-        <!-- mobile navigation -->
         <div class="uk-container">
             <div class="navigation-container">
-                <div class="uk-grid uk-flex uk-flex-middle uk-flex-center">
-                    <div class="uk-width-1-2">
+                <div class="uk-grid">
+                    <div class="uk-width-1-2 uk-width-medium-3-10">
                         <div class="navigation-container__logo">
                             <img class="navigation-container__logo-image" src="assets/images/alectrix-logo.png" alt="Company Logo">
                         </div>
                     </div>
-                    <div class="uk-width-1-2">
-                        <div class="hamburger-menu">
+                    <div class="uk-width-1-2 uk-width-medium-7-10">
+                        <!-- mobile navigation -->
+                        <div class="hamburger-menu uk-hidden-large">
                             <a class="hamburger-menu__menu-link" href="#offcanvas-menu" data-uk-offcanvas>
                                 <span class="uk-icon-bars uk-icon-large"></span>
                             </a>
@@ -55,21 +55,54 @@
                                 <a href="#offcanvas-menu" class="uk-close" data-uk-offcanvas></a>
                                 <div class="slide-menu__nav">
                                     <ul class="slide-menu__list">
-                                        <li class="slide-menu__links"><a class="slide-menu__names" href="#">Home</a></li>
-                                        <li class="slide-menu__links"><a class="slide-menu__names" href="#">About Us</a></li>
-                                        <li class="slide-menu__links"><a class="slide-menu__names" href="#">Electrical Services</a></li>
-                                        <li class="slide-menu__links"><a class="slide-menu__names" href="#">Free Quote</a></li>
-                                        <li class="slide-menu__links"><a class="slide-menu__names" href="#">Contact Us</a></li>
+                                        <li class="slide-menu__links">
+                                            <a class="slide-menu__names" href="#">Home</a>
+                                        </li>
+                                        <li class="slide-menu__links">
+                                            <a class="slide-menu__names" href="#">About Us</a>
+                                        </li>
+                                        <li class="slide-menu__links">
+                                            <a class="slide-menu__names" href="#">Electrical Services</a>
+                                        </li>
+                                        <li class="slide-menu__links">
+                                            <a class="slide-menu__names" href="#">Free Quote</a>
+                                        </li>
+                                        <li class="slide-menu__links">
+                                            <a class="slide-menu__names" href="#">Contact Us</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <!-- This is the off-canvas sidebar -->
+                        <!-- end mobile navigation -->
+                        <!-- desktop navigation -->
+                        <div class="desktop-menu uk-hidden-small uk-visible-large">
+                            <div class="desktop-menu__menu-nav">
+                                <ul class="desktop-menu__list">
+                                    <li class="desktop-menu__links">
+                                        <a href="#" class="desktop-menu__names">Home</a>
+                                    </li>
+                                    <li class="desktop-menu__links">
+                                        <a href="#" class="desktop-menu__names">About Us</a>
+                                    </li>
+                                    <li class="desktop-menu__links">
+                                        <a href="#" class="desktop-menu__names">Electrical Services</a>
+                                    </li>
+                                    <li class="desktop-menu__links">
+                                        <a href="#" class="desktop-menu__names">Free Quote</a>
+                                    </li>
+                                    <li class="desktop-menu__links">
+                                        <a href="#" class="desktop-menu__names">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- end desktop navigation -->
                     </div>
                 </div>
             </div>
         </div>
-        <!-- end mobile navigation -->
     </nav>
     <!-- END MAIN NAVIGATON -->
     <!--  SCRIPT -->

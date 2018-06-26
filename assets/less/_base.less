@@ -138,13 +138,13 @@ h1 {
 		}
 	}
 }
-
 // #endregion
+
 /* ==========================================================================
    GLOBAL PAGE SECTIONS ( Site Menu, Site Footer, etc )
    ========================================================================== */
 
-//Main Navigaton
+//#region Main Navigaton
 .navigation {
 	position: fixed;
 	top: 0;
@@ -155,13 +155,17 @@ h1 {
 	height: auto;
 	padding: 30px 15px;
 	border-bottom: 5px solid @tomato;
+	.uk-container {
+		margin: 0 auto;
+	}
 	&-container {
 		&__logo {
 			width: 166px;
 			height: 45px;
 		}
-	}
+	} //mobile navigation
 	.hamburger-menu {
+		padding: 5px 0;
 		text-align: right;
 		&__menu-link {
 			.soft-transition();
@@ -198,6 +202,7 @@ h1 {
 			.soft-transition();
 			padding: 10px 20px;
 			text-align: left;
+			text-transform: uppercase;
 			&:hover {
 				background-color: @tomato;
 			}
@@ -208,5 +213,34 @@ h1 {
 			color: @black;
 			text-decoration: none;
 		}
+	} //desktop navigation
+	.desktop-menu {
+		padding: 13px 0;
+		&__list {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+		&__links {
+			display: inline-block;
+			padding: 0 10px;
+			text-transform: uppercase;
+		}
+		&__names {
+			.soft-transition();
+			font-size: @main-size - 4px;
+			font-weight: bold;
+			color: @black;
+			text-decoration: none;
+			&:hover {
+				color: @tomato;
+				&::after {
+					content: '';
+					border-bottom: 1px solid red;
+				}
+			}
+		}
 	}
 }
+
+//#endregion
