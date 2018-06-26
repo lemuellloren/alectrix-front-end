@@ -155,20 +155,20 @@ h1 {
 	height: auto;
 	padding: 30px 15px;
 	border-bottom: 5px solid @tomato;
-	.nav-container {
+	&-container {
 		&__logo {
 			width: 166px;
 			height: 45px;
 		}
+	}
+	.hamburger-menu {
+		text-align: right;
 		&__menu-link {
 			.soft-transition();
 			color: @black;
 			&:hover {
 				color: @tomato;
 			}
-		}
-		&__hamburger-menu {
-			text-align: right;
 		}
 	}
 }
