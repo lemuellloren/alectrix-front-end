@@ -4908,21 +4908,21 @@
 		"oAP": "\/assets\/css\/error.css.map",
 		"oF": 0
 		},
-	"\/assets\/css\/home.css": {
+	"\/assets\/css\/index.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/assets\/css\/home-min.css",
+		"oAP": "\/assets\/css\/index-min.css",
 		"oF": 0,
 		"oS": 3
 		},
-	"\/assets\/css\/home.css.map": {
+	"\/assets\/css\/index.css.map": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/assets\/css\/home.css.map",
+		"oAP": "\/assets\/css\/index.css.map",
 		"oF": 0
 		},
 	"\/assets\/fonts\/AdobeFnt16.lst": {
@@ -5022,6 +5022,16 @@
 		"oA": 2,
 		"oAP": "\/assets\/fonts\/MyriadPro-SemiboldCond.otf",
 		"oF": 0
+		},
+	"\/assets\/images\/alectrix-hero-banner.jpg": {
+		"ft": 16384,
+		"iS": 378044,
+		"oA": 0,
+		"oAP": "\/assets\/images\/alectrix-hero-banner.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/assets\/images\/alectrix-logo.png": {
 		"ft": 32768,
@@ -5143,7 +5153,7 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/assets\/less\/home.less": {
+	"\/assets\/less\/index.less": {
 		"aP": 1,
 		"bl": 0,
 		"dJ": 0,
@@ -5152,7 +5162,7 @@
 		"iI": 0,
 		"ma": 1,
 		"oA": 0,
-		"oAP": "\/assets\/css\/home.css",
+		"oAP": "\/assets\/css\/index.css",
 		"oF": 0,
 		"oS": 1,
 		"rU": 0,

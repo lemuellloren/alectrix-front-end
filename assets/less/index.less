@@ -1,0 +1,65 @@
+// BASE IMPORT
+@import '_base';
+// PAGE FRAMEWORK COMPONENT IMPORT
+@import '../bower_components/uikit/less/components/slideshow.less';
+@import '../bower_components/uikit/less/components/dotnav.less';
+// PAGE FRAMEWORK OVERRIDES
+// PAGE SECTION STYLES
+/* #hero, #about, #contact, etc. */
+
+// #region Hero Banner Styles
+.hero-banner {
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/images/alectrix-hero-banner.jpg);
+    background-size: cover;
+    background-position: 50% 0;
+    background-color: @wheat; //background fallback
+    clip-path: polygon(46% 0, 100% 0, 100% 90%, 51% 100%, 0% 90%, 0 0);
+    &-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        padding: 15px;
+        text-align: center;
+    }
+    .heading-block {
+        &__head {
+            font-weight: 300;
+            color: @white;
+            line-height: 1em;
+            @media @width-768 {
+                font-size: @main-size + 30px;
+            }
+        }
+    }
+    .subheading-block {
+        padding-bottom: 30px;
+        padding-top: 30px;
+        @media @width-768 {
+            margin-top: 30px;
+        }
+        &__subhead {
+            font-size: @main-size - 4px;
+            font-weight: 300;
+            color: @white;
+            @media @width-768 {
+                font-size: @main-size + 6px;
+            }
+        }
+    }
+    .banner-buttons-block {
+        @media @width-768 {
+            display: inline-block;
+            padding: 0 15px;
+        }
+    }
+    .btn-block {
+        padding: 10px 0;
+    }
+}
+
+// #endregion Hero Banner Styles

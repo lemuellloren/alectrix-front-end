@@ -60,8 +60,8 @@ sans-serif;
 
 html,
 body {
-	position: relative;
-	height: 100%;
+	width: 100%;
+    height: 100%;
 	font-family: @main-font;
 }
 
@@ -70,16 +70,21 @@ h1 {
 }
 
 // main body container
-.main-body-container {
-	min-height: 100vh;
-	/* will cover the 100% of viewport */
-	overflow: hidden;
-	display: block;
-	position: relative;
-	padding-bottom: 100px;
+.wrapper {
+	min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 	/* height of your footer */
 }
-
+.main {
+	flex-grow: 1;
+	padding-top: 110px;
+}
+.main,
+.footer {
+    flex-shrink: 0;
+}
 /* ==========================================================================
    SITE-WIDE STYLES & MIXINS
    ========================================================================== */
@@ -102,6 +107,9 @@ h1 {
 	font-weight: bold;
 	cursor: pointer;
 	.soft-transition();
+	@media @width-768 {
+		font-size: @main-size + 2px;
+	}
 	&::before {
 		.soft-transition();
 		content: '';
@@ -178,6 +186,7 @@ h1 {
 	height: auto;
 	padding: 30px 15px;
 	border-bottom: 5px solid @tomato;
+	background-color: @white;
 	.uk-container {
 		margin: 0 auto;
 	}
@@ -265,16 +274,12 @@ h1 {
 // #endregion
 // #region Site Footer
 .footer {
-	position: absolute;
-	bottom: 0;
 	width: 100%;
 	height: 230px;
+	padding: 80px 15px;
 	background: @bg-gradient;
 	.uk-container {
 		margin: 0 auto;
-	}
-	&-container {
-		padding: 80px 0;
 	}
 	&-logo {
 		width: 111px;
