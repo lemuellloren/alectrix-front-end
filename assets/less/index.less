@@ -12,10 +12,10 @@
     position: relative;
     height: 90vh;
     width: 100%;
+    background: @bg-gradient; //background fallback
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/images/alectrix-hero-banner.jpg);
     background-size: cover;
     background-position: 50% 0;
-    background-color: @wheat; //background fallback
     clip-path: polygon(46% 0, 100% 0, 100% 90%, 51% 100%, 0% 90%, 0 0);
     &-container {
         position: absolute;
@@ -91,7 +91,8 @@
 // #endregion About Us Styles
 // #region Service Section Styles
 .services {
-    padding: 50px 0;
+    padding-top: 50px;
+    padding-bottom: 100px;
     background: @bg-gradient;
     clip-path: polygon(46% 0, 100% 0, 100% 90%, 51% 100%, 0 90%, 0 0);
     .uk-container {
@@ -118,7 +119,7 @@
     &-list-container {
         padding-top: 30px;
         padding-bottom: 30px;
-        @media @width-768  {
+        @media @width-768 {
             padding-top: 80px;
             padding-bottom: 80px;
         }
@@ -147,6 +148,50 @@
         .services-button-block {
             padding-top: 20px;
             text-align: center;
+        }
+    }
+}
+
+// #endregion
+// #region Free Quote Styles
+.free-quote {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .uk-container {
+        margin: 0 auto;
+    }
+    &-container {
+        .quote-photo-block {
+            padding-bottom: 50px;
+        }
+        .free-quote-heading-block {
+            &__head {
+                text-align: center;
+                color: @black;
+                font-weight: 300;
+                @media @width-768 {
+                    text-align: left;
+                }
+            }
+        }
+        .free-quote-description-block {
+            padding-bottom: 20px;
+            &__desc {
+                font-size: @main-size - 4px; // font-weight: 300;
+                color: @black;
+                text-align: justify;
+            }
+        }
+    }
+    .form {
+        &__input,
+        &__textarea {
+            .main-field();
+        }
+        &__textarea {
+            height: auto;
+            width: 100%;
+            margin: 15px 0;
         }
     }
 }

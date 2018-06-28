@@ -5076,6 +5076,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/assets\/images\/light-bulb.png": {
+		"ft": 32768,
+		"iS": 4869,
+		"oA": 0,
+		"oAP": "\/assets\/images\/light-bulb.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/images\/mechanic-tools.png": {
 		"ft": 32768,
 		"iS": 6261,
@@ -5107,6 +5118,16 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/quote.jpg": {
+		"ft": 16384,
+		"iS": 197162,
+		"oA": 0,
+		"oAP": "\/assets\/images\/quote.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"\/assets\/images\/tester.png": {
