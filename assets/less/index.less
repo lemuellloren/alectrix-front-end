@@ -81,8 +81,7 @@
     .about-description-block {
         padding-bottom: 20px;
         &__desc {
-            font-size: @main-size - 4px;
-            font-weight: 300;
+            font-size: @main-size - 4px; // font-weight: 300;
             color: @black;
             text-align: justify;
         }
@@ -90,3 +89,27 @@
 }
 
 // #endregion About Us Styles
+// #region Service Section Styles
+.services {
+    padding: 50px 0;
+    background: @bg-gradient;
+    .uk-container {
+        margin: 0 auto;
+    }
+    &-title {
+        &__head {
+            text-align: center;
+            color: @white;
+            font-weight: 300;
+        }
+    }
+    &-description {
+        &__desc {
+            font-size: @main-size - 4px; // font-weight: 300;
+            color: @white;
+            text-align: center;
+        }
+    }
+}
+
+// #endregion
