@@ -5044,6 +5044,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/assets\/images\/circuit-board.png": {
+		"ft": 32768,
+		"iS": 3749,
+		"oA": 0,
+		"oAP": "\/assets\/images\/circuit-board.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/images\/electrician.jpg": {
 		"ft": 16384,
 		"iS": 515474,
@@ -5054,11 +5065,77 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/assets\/images\/energy.png": {
+		"ft": 32768,
+		"iS": 6498,
+		"oA": 0,
+		"oAP": "\/assets\/images\/energy.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/mechanic-tools.png": {
+		"ft": 32768,
+		"iS": 6261,
+		"oA": 0,
+		"oAP": "\/assets\/images\/mechanic-tools.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/phone.png": {
+		"ft": 32768,
+		"iS": 8290,
+		"oA": 0,
+		"oAP": "\/assets\/images\/phone.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/plug.png": {
+		"ft": 32768,
+		"iS": 3774,
+		"oA": 0,
+		"oAP": "\/assets\/images\/plug.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/tester.png": {
+		"ft": 32768,
+		"iS": 6211,
+		"oA": 0,
+		"oAP": "\/assets\/images\/tester.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/images\/white-logo.png": {
 		"ft": 32768,
 		"iS": 6223,
 		"oA": 0,
 		"oAP": "\/assets\/images\/white-logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/wires.png": {
+		"ft": 32768,
+		"iS": 3910,
+		"oA": 0,
+		"oAP": "\/assets\/images\/wires.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

@@ -168,6 +168,22 @@ h1 {
 			}
 		}
 	}
+	&--white {
+		background-color: @white;
+		border: 1px solid @white;
+		color: @tomato;
+		&:hover {
+			border: 1px solid @tomato;
+		}
+		&::before {
+			background-color: @black;
+		}
+		&:hover {
+			&::before {
+				background-color: @black;
+			}
+		}
+	}
 }
 
 // #endregion

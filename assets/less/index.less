@@ -93,6 +93,7 @@
 .services {
     padding: 50px 0;
     background: @bg-gradient;
+    clip-path: polygon(46% 0, 100% 0, 100% 90%, 51% 100%, 0 90%, 0 0);
     .uk-container {
         margin: 0 auto;
     }
@@ -107,6 +108,44 @@
         &__desc {
             font-size: @main-size - 4px; // font-weight: 300;
             color: @white;
+            text-align: center;
+            @media @width-768 {
+                margin: 0 auto;
+                width: 70%;
+            }
+        }
+    }
+    &-list-container {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        @media @width-768  {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+    }
+    &-list-block {
+        .services-image-block {
+            margin: 0 auto;
+            width: 48px;
+            height: 47px;
+            @media @width-768 {
+                width: 79.8px;
+                height: 77.6px;
+            }
+        }
+        .services-list-description {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: @main-size - 6px;
+            font-weight: bold;
+            text-align: center;
+            color: @white;
+            @media @width-768 {
+                font-size: @main-size;
+            }
+        }
+        .services-button-block {
+            padding-top: 20px;
             text-align: center;
         }
     }
