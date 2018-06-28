@@ -197,3 +197,55 @@
 }
 
 // #endregion
+// #region Contact Us Styles
+.contact-us {
+    background-color: @black;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .uk-container {
+        margin: 0 auto;
+    }
+}
+
+.contact-us-heading-block {
+    &__head {
+        text-align: center;
+        color: @white;
+        font-weight: 300;
+        @media @width-768 {
+            text-align: left;
+        }
+    }
+}
+
+.contact-us-description-block {
+    padding-bottom: 20px;
+    &__desc {
+        font-size: @main-size - 4px; // font-weight: 300;
+        color: @white;
+        text-align: justify;
+    }
+}
+
+.contact-form {
+    .input-block {
+        margin-bottom: 10px;
+        &__input {
+            .black-field();
+        }
+    }
+    .textarea-block {
+        margin-bottom: 10px;
+        &__textarea {
+            height: auto !important;
+            width: 100%;
+            .black-field();
+        }
+    } // &__textarea {
+    //     height: auto;
+    //     width: 100%;
+    //     margin: 15px 0;
+    // }
+}
+
+// #endregion
