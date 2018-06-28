@@ -199,6 +199,7 @@
 // #endregion
 // #region Contact Us Styles
 .contact-us {
+    clip-path: polygon(46% 0, 100% 0, 100% 90%, 51% 100%, 0 90%, 0 0);
     background-color: @black;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -241,11 +242,31 @@
             width: 100%;
             .black-field();
         }
-    } // &__textarea {
-    //     height: auto;
-    //     width: 100%;
-    //     margin: 15px 0;
-    // }
+    } 
 }
-
+.contact-details-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.dial-block {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    &__phone {
+        .soft-transition();
+        font-size: @main-size - 4px;
+        color: @white;
+        @media @width-768 {
+            font-size: @main-size + 2px; 
+        }
+        &:hover {
+            text-decoration: none;
+            color: @tomato;
+        }
+    }
+}
+.dial-icon {
+    font-size: 88px;
+    color: @tomato;
+}
 // #endregion
