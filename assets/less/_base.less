@@ -89,6 +89,10 @@ h1 {
 	flex-shrink: 0;
 }
 
+.uk-container {
+	margin: 0 auto;
+}
+
 /* ==========================================================================
    SITE-WIDE STYLES & MIXINS
    ========================================================================== */
@@ -114,62 +118,24 @@ h1 {
 	@media @width-768 {
 		font-size: @main-size + 2px;
 	}
-	&::before {
-		.soft-transition();
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 50%;
-		right: 50%;
-		bottom: 0;
-		opacity: 0;
-		z-index: -2;
-	}
-	&:hover {
-		&::before {
-			.soft-transition();
-			left: 0;
-			right: 0;
-			opacity: 1;
-			background-color: @black;
-		}
-	}
-	&:focus {
-		&::before {
-			.soft-transition();
-			left: 0;
-			right: 0;
-			opacity: 1;
-		}
-	}
 	&--tomato {
 		background-color: @tomato;
 		border: 1px solid @tomato;
 		&:hover {
-			border: 1px solid @black;
-		}
-		&::before {
 			background-color: @black;
-		}
-		&:hover {
-			&::before {
-				background-color: @black;
-			}
+			border: 1px solid @black;
+			text-decoration: none;
+			color: @white;
 		}
 	}
 	&--transparent {
 		background-color: transparent;
 		border: 1px solid @white;
 		&:hover {
-			border: 1px solid @tomato;
-		}
-		&::before {
 			background-color: @tomato;
-		}
-		&:hover {
-			&::before {
-				background-color: @tomato;
-			}
+			border: 1px solid @tomato;
+			text-decoration: none;
+			color: @white;
 		}
 	}
 	&--white {
@@ -181,21 +147,15 @@ h1 {
 			padding: 10px 20px;
 		}
 		&:hover {
-			border: 1px solid @tomato;
-		}
-		&::before {
 			background-color: @black;
-		}
-		&:hover {
-			&::before {
-				background-color: @black;
-			}
+			border: 1px solid @black;
+			text-decoration: none;
+			color: @white;
 		}
 	}
 }
 
 // #endregion
-
 // #region Fields Mixins
 .main-field() {
 	width: 100%;
@@ -206,7 +166,12 @@ h1 {
 	background-color: @wheat;
 	border: solid 1px @dark-gray;
 	outline: none;
+	color: @black;
+	&::placeholder {
+		color: @black;
+	}
 }
+
 .black-field() {
 	width: 100%;
 	height: 30px;
@@ -216,10 +181,12 @@ h1 {
 	background-color: transparent;
 	border: solid 1px @white;
 	outline: none;
+	color: @white;
 	&::placeholder {
 		color: @white;
 	}
 }
+
 // #endregion
 /* ==========================================================================
    GLOBAL PAGE SECTIONS ( Site Menu, Site Footer, etc )
@@ -237,86 +204,87 @@ h1 {
 	padding: 30px 15px;
 	border-bottom: 5px solid @tomato;
 	background-color: @white;
-	.uk-container {
-		margin: 0 auto;
-	}
 	&-container {
 		&__logo {
 			width: 166px;
 			height: 45px;
 		}
-	} //mobile navigation
-	.hamburger-menu {
-		padding: 5px 0;
-		text-align: right;
-		&__menu-link {
-			.soft-transition();
-			color: @black;
-			&:hover {
-				color: @tomato;
-			}
+	}
+} //mobile navigation
+.hamburger-menu {
+	padding: 5px 0;
+	text-align: right;
+	&__menu-link {
+		.soft-transition();
+		color: @black;
+		&:hover {
+			color: @tomato;
 		}
 	}
-	.slide-menu {
-		width: 200px;
-		background-color: @white;
-		.uk-close {
-			.soft-transition();
-			position: absolute;
-			right: 15px;
-			top: 13px;
-			font-size: 24px;
-			color: @black;
-			opacity: 1;
-			&:hover {
-				color: @tomato;
-			}
+}
+
+.slide-menu {
+	width: 200px;
+	background-color: @white;
+	.uk-close {
+		.soft-transition();
+		position: absolute;
+		right: 15px;
+		top: 13px;
+		font-size: 24px;
+		color: @black;
+		opacity: 1;
+		&:hover {
+			color: @tomato;
 		}
-		&__nav {
-			padding-top: 60px;
-			text-align: center;
+	}
+	&__nav {
+		padding-top: 60px;
+		text-align: center;
+	}
+	&__list {
+		padding: 0;
+		list-style: none;
+	}
+	&__links {
+		.soft-transition();
+		padding: 10px 20px;
+		text-align: left;
+		text-transform: uppercase;
+		&:hover {
+			background-color: @tomato;
 		}
-		&__list {
-			padding: 0;
-			list-style: none;
-		}
-		&__links {
-			.soft-transition();
-			padding: 10px 20px;
-			text-align: left;
-			text-transform: uppercase;
-			&:hover {
-				background-color: @tomato;
-			}
-		}
-		&__names {
-			font-size: @main-size - 4px;
-			font-weight: bold;
-			color: @black;
+	}
+	&__names {
+		font-size: @main-size - 4px;
+		font-weight: bold;
+		color: @black;
+		text-decoration: none;
+	}
+}
+
+//desktop navigation
+.desktop-menu {
+	padding: 13px 0;
+	&__list {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+	&__links {
+		display: inline-block;
+		text-transform: uppercase;
+	}
+	&__names {
+		.soft-transition();
+		padding: 0 10px;
+		font-size: @main-size - 4px;
+		font-weight: bold;
+		color: @black;
+		text-decoration: none;
+		&:hover {
+			color: @tomato;
 			text-decoration: none;
-		}
-	} //desktop navigation
-	.desktop-menu {
-		padding: 13px 0;
-		&__list {
-			padding: 0;
-			margin: 0;
-			list-style: none;
-		}
-		&__links {
-			display: inline-block;
-			text-transform: uppercase;
-		}
-		&__names {
-			.soft-transition();
-			padding: 0 10px;
-			font-size: @main-size - 4px;
-			font-weight: bold;
-			color: @black;
-			text-decoration: none;
-			&:hover {
-				color: @tomato;
-			}
 		}
 	}
 }
@@ -326,11 +294,9 @@ h1 {
 .footer {
 	width: 100%;
 	height: 230px;
-	padding: 80px 15px;
+	padding: 180px 15px;
+	margin-top: -100px;
 	background: @bg-gradient;
-	.uk-container {
-		margin: 0 auto;
-	}
 	&-logo {
 		width: 111px;
 		height: 30px;

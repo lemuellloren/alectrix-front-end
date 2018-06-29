@@ -35,8 +35,8 @@
     <div class="wrapper">
         <main class="main">
             <!-- HERO BANNER -->
-            <section class="hero-banner">
-                <div class="uk-container">
+            <section id="#hero-banner" class="hero-banner">
+                <div class="uk-container main-container">
                     <div class="hero-banner-container">
                         <div class="heading-block">
                             <h1 class="heading-block__head">
@@ -50,12 +50,12 @@
                         </div>
                         <div class="banner-buttons-block">
                             <div class="btn-block">
-                                <button class="btn btn--tomato">Get Started</button>
+                                <a class="btn btn--tomato" href="#about" data-uk-smooth-scroll="{offset: 90}">Get Started</a>
                             </div>
                         </div>
                         <div class="banner-buttons-block">
                             <div class="btn-block">
-                                <button class="btn btn--transparent">Get Free Quote</button>
+                                <a class="btn btn--transparent" href="#free-quote" data-uk-smooth-scroll="{offset: 90}">Get Free Quote</a>
                             </div>
                         </div>
                     </div>
@@ -63,7 +63,7 @@
             </section>
             <!-- END HERO BANNER -->
             <!-- ABOUT US SECTION -->
-            <section class="about-us">
+            <section id="about" class="about-us">
                 <div class="uk-container">
                     <div class="about-us-container">
                         <div class="uk-grid uk-grid-large">
@@ -100,7 +100,7 @@
             </section>
             <!-- END ABOUT US SECTION -->
             <!-- SERVICES SECTION -->
-            <section class="services">
+            <section id="service" class="services">
                 <div class="uk-container">
                     <div class="services-container">
                         <div class="services-title">
@@ -196,9 +196,9 @@
                                             <img src="assets/images/phone.png" alt="Contact Us" class="services-image-block__image">
                                         </div>
                                         <div class="services-button-block">
-                                            <button class="btn btn--white">
+                                            <a href="#contact" class="btn btn--white" data-uk-smooth-scroll="{offset: 90}">
                                                 Contact Us
-                                            </button>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -210,7 +210,7 @@
             </section>
             <!-- END SERVICES SECTION -->
             <!-- FREE QUOTE SECTION -->
-            <section class="free-quote">
+            <section id="free-quote" class="free-quote">
                 <div class="uk-container">
                     <div class="free-quote-container">
                         <div class="uk-grid uk-grid-large">
@@ -266,7 +266,7 @@
             </section>
             <!-- END FREE QUOTE SECTION -->
             <!-- CONTACT US SECTION -->
-            <section class="contact-us">
+            <section id="contact" class="contact-us">
                 <div class="uk-container">
                     <div class="contact-container">
                         <div class="uk-grid large">
@@ -344,19 +344,19 @@
                                     <div class="slide-menu__nav">
                                         <ul class="slide-menu__list">
                                             <li class="slide-menu__links">
-                                                <a class="slide-menu__names" href="#">Home</a>
+                                                <a class="slide-menu__names" href="#hero-banner" data-uk-smooth-scroll="{offset: 90}">Home</a>
                                             </li>
                                             <li class="slide-menu__links">
-                                                <a class="slide-menu__names" href="#">About Us</a>
+                                                <a class="slide-menu__names" href="#about" data-uk-smooth-scroll="{offset: 90}">About Us</a>
                                             </li>
                                             <li class="slide-menu__links">
-                                                <a class="slide-menu__names" href="#">Electrical Services</a>
+                                                <a class="slide-menu__names" href="#service" data-uk-smooth-scroll="{offset: 90}">Electrical Services</a>
                                             </li>
                                             <li class="slide-menu__links">
-                                                <a class="slide-menu__names" href="#">Free Quote</a>
+                                                <a class="slide-menu__names" href="#free-quote" data-uk-smooth-scroll="{offset: 90}">Free Quote</a>
                                             </li>
                                             <li class="slide-menu__links">
-                                                <a class="slide-menu__names" href="#">Contact Us</a>
+                                                <a class="slide-menu__names" href="#contact" data-uk-smooth-scroll="{offset: 90}">Contact Us</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -369,19 +369,19 @@
                                 <div class="desktop-menu__menu-nav">
                                     <ul class="desktop-menu__list">
                                         <li class="desktop-menu__links">
-                                            <a href="#" class="desktop-menu__names">Home</a>
+                                            <a href="#hero-banner" class="desktop-menu__names" data-uk-smooth-scroll="{offset: 90}">Home</a>
                                         </li>
                                         <li class="desktop-menu__links">
-                                            <a href="#" class="desktop-menu__names">About Us</a>
+                                            <a href="#about" class="desktop-menu__names" data-uk-smooth-scroll="{offset: 90}">About Us</a>
                                         </li>
                                         <li class="desktop-menu__links">
-                                            <a href="#" class="desktop-menu__names">Electrical Services</a>
+                                            <a href="#service" class="desktop-menu__names" data-uk-smooth-scroll="{offset: 90}">Electrical Services</a>
                                         </li>
                                         <li class="desktop-menu__links">
-                                            <a href="#" class="desktop-menu__names">Free Quote</a>
+                                            <a href="#free-quote" class="desktop-menu__names" data-uk-smooth-scroll="{offset: 90}">Free Quote</a>
                                         </li>
                                         <li class="desktop-menu__links">
-                                            <a href="#" class="desktop-menu__names">Contact Us</a>
+                                            <a href="#contact" class="desktop-menu__names" data-uk-smooth-scroll="{offset: 90}">Contact Us</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -403,19 +403,19 @@
                     <div class="footer-menu">
                         <div class="footer-menu__list">
                             <li class="footer-menu__links">
-                                <a href="#" class="footer-menu__names">Home</a>
+                                <a href="#hero-banner" class="footer-menu__names" data-uk-smooth-scroll="{offset: 90}">Home</a>
                             </li>
                             <li class="footer-menu__links">
-                                <a href="#" class="footer-menu__names">About Us</a>
+                                <a href="#about" class="footer-menu__names" data-uk-smooth-scroll="{offset: 90}">About Us</a>
                             </li>
                             <li class="footer-menu__links">
-                                <a href="#" class="footer-menu__names">Electrical Services</a>
+                                <a href="#service" class="footer-menu__names" data-uk-smooth-scroll="{offset: 90}">Electrical Services</a>
                             </li>
                             <li class="footer-menu__links">
-                                <a href="#" class="footer-menu__names">Free Quote</a>
+                                <a href="#free-quote" class="footer-menu__names" data-uk-smooth-scroll="{offset: 90}">Free Quote</a>
                             </li>
                             <li class="footer-menu__links">
-                                <a href="#" class="footer-menu__names">Contact Us</a>
+                                <a href="#contact" class="footer-menu__names" data-uk-smooth-scroll="{offset: 90}">Contact Us</a>
                             </li>
                         </div>
                     </div>

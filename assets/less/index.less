@@ -26,40 +26,44 @@
         padding: 15px;
         text-align: center;
     }
-    .heading-block {
-        &__head {
-            font-weight: 300;
-            color: @white;
-            line-height: 1em;
-            @media @width-768 {
-                font-size: @main-size + 30px;
-            }
-        }
-    }
-    .subheading-block {
-        padding-bottom: 30px;
-        padding-top: 30px;
+}
+
+.heading-block {
+    &__head {
+        font-weight: 300;
+        color: @white;
+        line-height: 1em;
         @media @width-768 {
-            margin-top: 30px;
-        }
-        &__subhead {
-            font-size: @main-size - 4px;
-            font-weight: 300;
-            color: @white;
-            @media @width-768 {
-                font-size: @main-size + 6px;
-            }
+            font-size: @main-size + 30px;
         }
     }
-    .banner-buttons-block {
+}
+
+.subheading-block {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    @media @width-768 {
+        margin-top: 30px;
+    }
+    &__subhead {
+        font-size: @main-size - 4px;
+        font-weight: 300;
+        color: @white;
         @media @width-768 {
-            display: inline-block;
-            padding: 0 15px;
+            font-size: @main-size + 6px;
         }
     }
-    .btn-block {
-        padding: 10px 0;
+}
+
+.banner-buttons-block {
+    @media @width-768 {
+        display: inline-block;
+        padding: 0 15px;
     }
+}
+
+.btn-block {
+    padding: 10px 0;
 }
 
 // #endregion Hero Banner Styles
@@ -69,22 +73,21 @@
     @media @width-768 {
         padding: 100px 0;
     }
-    .uk-container {
-        margin: 0 auto;
+}
+
+.about-description-block {
+    padding-bottom: 20px;
+    &__desc {
+        font-size: @main-size - 4px; // font-weight: 300;
+        color: @black;
+        text-align: justify;
     }
-    .about-heading-block {
-        &__head {
-            color: @black;
-            font-weight: 300;
-        }
-    }
-    .about-description-block {
-        padding-bottom: 20px;
-        &__desc {
-            font-size: @main-size - 4px; // font-weight: 300;
-            color: @black;
-            text-align: justify;
-        }
+}
+
+.about-heading-block {
+    &__head {
+        color: @black;
+        font-weight: 300;
     }
 }
 
@@ -95,9 +98,6 @@
     padding-bottom: 100px;
     background: @bg-gradient;
     clip-path: polygon(46% 0, 100% 0, 100% 90%, 51% 100%, 0 90%, 0 0);
-    .uk-container {
-        margin: 0 auto;
-    }
     &-title {
         &__head {
             text-align: center;
@@ -124,32 +124,33 @@
             padding-bottom: 80px;
         }
     }
-    &-list-block {
-        .services-image-block {
-            margin: 0 auto;
-            width: 48px;
-            height: 47px;
-            @media @width-768 {
-                width: 79.8px;
-                height: 77.6px;
-            }
-        }
-        .services-list-description {
-            padding-top: 10px;
-            padding-bottom: 10px;
-            font-size: @main-size - 6px;
-            font-weight: bold;
-            text-align: center;
-            color: @white;
-            @media @width-768 {
-                font-size: @main-size;
-            }
-        }
-        .services-button-block {
-            padding-top: 20px;
-            text-align: center;
-        }
+}
+
+.services-image-block {
+    margin: 0 auto;
+    width: 48px;
+    height: 47px;
+    @media @width-768 {
+        width: 79.8px;
+        height: 77.6px;
     }
+}
+
+.services-list-description {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: @main-size - 6px;
+    font-weight: bold;
+    text-align: center;
+    color: @white;
+    @media @width-768 {
+        font-size: @main-size;
+    }
+}
+
+.services-button-block {
+    padding-top: 35px;
+    text-align: center;
 }
 
 // #endregion
@@ -157,42 +158,41 @@
 .free-quote {
     padding-top: 100px;
     padding-bottom: 100px;
-    .uk-container {
-        margin: 0 auto;
+}
+
+.free-quote-description-block {
+    padding-bottom: 20px;
+    &__desc {
+        font-size: @main-size - 4px; // font-weight: 300;
+        color: @black;
+        text-align: justify;
     }
-    &-container {
-        .quote-photo-block {
-            padding-bottom: 50px;
-        }
-        .free-quote-heading-block {
-            &__head {
-                text-align: center;
-                color: @black;
-                font-weight: 300;
-                @media @width-768 {
-                    text-align: left;
-                }
-            }
-        }
-        .free-quote-description-block {
-            padding-bottom: 20px;
-            &__desc {
-                font-size: @main-size - 4px; // font-weight: 300;
-                color: @black;
-                text-align: justify;
-            }
+}
+
+.free-quote-heading-block {
+    &__head {
+        text-align: center;
+        color: @black;
+        font-weight: 300;
+        @media @width-768 {
+            text-align: left;
         }
     }
-    .form {
-        &__input,
-        &__textarea {
-            .main-field();
-        }
-        &__textarea {
-            height: auto;
-            width: 100%;
-            margin: 15px 0;
-        }
+}
+
+.quote-photo-block {
+    padding-bottom: 50px;
+}
+
+.form {
+    &__input,
+    &__textarea {
+        .main-field();
+    }
+    &__textarea {
+        height: auto;
+        width: 100%;
+        margin: 15px 0;
     }
 }
 
@@ -203,9 +203,10 @@
     background-color: @black;
     padding-top: 100px;
     padding-bottom: 100px;
-    .uk-container {
-        margin: 0 auto;
+    @media @width-768 {
+        padding-bottom: 150px;
     }
+    // margin-bottom: -200px;
 }
 
 .contact-us-heading-block {
@@ -242,13 +243,15 @@
             width: 100%;
             .black-field();
         }
-    } 
+    }
 }
+
 .contact-details-container {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     text-align: center;
 }
+
 .dial-block {
     padding-bottom: 10px;
     padding-top: 10px;
@@ -257,7 +260,7 @@
         font-size: @main-size - 4px;
         color: @white;
         @media @width-768 {
-            font-size: @main-size + 2px; 
+            font-size: @main-size + 2px;
         }
         &:hover {
             text-decoration: none;
@@ -265,8 +268,10 @@
         }
     }
 }
+
 .dial-icon {
     font-size: 88px;
     color: @tomato;
 }
+
 // #endregion
